@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/liumc/goinaction/chapter02/sample/search"
+	"github.com/qbitty/goinaction/chapter02/sample/search"
 )
 
 type (

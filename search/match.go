@@ -6,8 +6,8 @@ import (
 )
 
 type Result struct {
-	Feild    string
-	Constant string
+	Field   string
+	Content string
 }
 
 type Matcher interface {
@@ -28,6 +28,6 @@ func Match(matcher Matcher, feed *Feed, searchTerm string, results chan<- *Resul
 
 func Display(results chan *Result) {
 	for result := range results {
-		fmt.Printf("%s:\n%s\n\n", result.Feild, result.Constant)
+		fmt.Printf("%s:\n%s\n\n", result.Field, result.Content)
 	}
 }

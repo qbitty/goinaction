@@ -98,8 +98,8 @@ func (rss rssMatcher) Search(feed *search.Feed, searchTerm string) ([]*search.Re
 
 		if matched {
 			results = append(results, &search.Result{
-				Feild:    "Title",
-				Constant: item.Title,
+				Field:   "Title",
+				Content: item.Title,
 			})
 		}
 
@@ -110,8 +110,8 @@ func (rss rssMatcher) Search(feed *search.Feed, searchTerm string) ([]*search.Re
 
 		if matched {
 			results = append(results, &search.Result{
-				Feild:    "Description",
-				Constant: item.Description,
+				Field:   "Description",
+				Content: item.Description,
 			})
 		}
 	}
